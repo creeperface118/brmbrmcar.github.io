@@ -7,6 +7,18 @@ function load(){
     var x = document.getElementById("myText").value;
     document.getElementById("link").setAttribute("href",x);
 }
+function big() {
+    document.getElementById("magic").height = "1500";
+    document.getElementById("magic").width = "1200";
+}
+function medium() {
+    document.getElementById("magic").height = "1000";
+    document.getElementById("magic").width = "800";
+}
+function small() {
+    document.getElementById("magic").height = "667";
+    document.getElementById("magic").width = "536";
+}
 </script>
 <a href="javascript:load()">✔️</a>
 <a id="link" target="magic">Link</a>
@@ -15,8 +27,9 @@ function load(){
 <a target="magic" href="https://duckduckgo.com">DuckDuckGo</a>
 <a target="magic" href="https://wikipedia.org">Wikipedia</a>
 <a target="magic" href="http://brmbrmcar.github.io/crash.html">Frame crash test</a>
-<a target="magic" href="http://brmbrmcar.github.io/frame.html" style="visibility:hidden">hidden frame loop</a><br/>
-
+<a target="magic" href="http://brmbrmcar.github.io/frame.html" style="visibility:hidden">hidden frame loop</a><br/><br/>
+Change size: <a href="javascript:big()">Big</a> <a href="javascript:medium()">Medium</a> <a href="javascript:small()">Small</a>
+<br/><br/>
 <a href="javascript:history.back()"><-</a>
 <a href="javascript:history.forward()">-></a>
 <br/>
