@@ -1,11 +1,11 @@
 <html><head><title>magic frame</title></head>
 <body><center><h1>Magic frame!</h1>
 <br/><br/>Custom link (hit the tick then Link):<br/>
-<input type="text" id="myText" value="http://">
+<input type="text" id="myText" value="http://" onkeydown = "if (event.keyCode == 13) load()">
 <script>
 function load(){
     var x = document.getElementById("myText").value;
-    document.getElementById("link").setAttribute("href",x);
+    window.open(x,"magic");
 }
 function big() {
     document.getElementById("magic").height = "1500";
