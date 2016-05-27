@@ -21,6 +21,14 @@ function small() {
     document.getElementById("magic").height = "667";
     document.getElementById("magic").width = "667";
 }
+function width() {
+    var y = document.getElementById("customwidth").value;
+    document.getElementById("magic").width = y;
+}
+function height() {
+    var z = document.getElementById("customheight").value;
+    document.getElementById("magic").height = z;
+}
 </script>
 <a href="javascript:load()">✔️</a>
 <br/>
@@ -30,6 +38,8 @@ function small() {
 <a target="magic" href="http://brmbrmcar.github.io/crash.html">Frame crash test</a>
 <a target="magic" href="http://brmbrmcar.github.io/frame.html" style="visibility:hidden">hidden frame loop</a><br/><br/>
 Change size: <a href="javascript:big()">Big</a> <a href="javascript:medium()">Medium</a> <a href="javascript:small()">Small</a>
+<input type="text" id="customwidth" value="Custom width (pixels)" onkeydown = "if (event.keyCode == 13) customwidth()">
+<input type="text" id="customheight" value="Custom height (pixels)" onkeydown = "if (event.keyCode == 13) customheight()">
 <br/><br/>
 <a href="javascript:history.back()"><-</a>
 <a href="javascript:history.forward()">-></a>
