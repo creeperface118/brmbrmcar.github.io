@@ -2,6 +2,6 @@ brmbrmlicense v2.0
 
 Permission is granted to reuse or modify all content under the license, under the agreement that no other intellectual rights are gained from your work. Credit is not required under any circumstance.
 
-"Intellectual rights" are restrictions you set on your work to own certain copyrights.
+"Intellectual rights" are restrictions you set on your work to own certain copyrights, which include proprietary rights.
 
 No other restrictions! 😊
