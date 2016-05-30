@@ -1,4 +1,7 @@
-brmbrmlicense v1.5
+brmbrmlicense v2.0
 
-Permission is granted to reuse or modify all content under the license, under the agreement that no other intellectual rights are gained from your work. Credit does not need to be given. In the case of a moification, you cannot claim it is unmodified if you state the work came directly from the licensor.
+Permission is granted to reuse or modify all content under the license, under the agreement that no other intellectual rights are gained from your work. Credit does not need to be given under any circumstance.
+
+"Intellectual rights" are restrictions you set on your work to own certain copyrights.
+
 No other restrictions! 😊
