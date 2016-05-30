@@ -5,6 +5,12 @@ Note that some sites, like YouTube, will not work, and this is not a proxy!
 <br/><br/>Custom link:<br/>
 <input type="text" id="myText" value="http://" onkeydown = "if (event.keyCode == 13) load()">
 <script>
+function rightclick(e){
+  e = e || window.event;
+  switch (e.which) {
+   case 3: barrelroll(); break; 
+  }
+}
 function load(){
     var x = document.getElementById("myText").value;
     window.open(x,"magic");
@@ -48,9 +54,10 @@ Change size: <a href="javascript:big()">Big</a> <a href="javascript:medium()">Me
 <a href="javascript:rotate3()">270°</a>
 <br/><br/>
 <a href="javascript:history.back()"><-</a>
-<a href="javascript:location.reload();">🔃</a>
+<a href="javascript:location.reload();"onmousedown="rightclick(event);" >🔃</a>
 <a href="javascript:history.forward()">-></a>
 <br/>
-<iframe name="magic" width="1000" height="1000" src="https://duckduckgo.com" id="magic"/>
-<br/><br/><font size="1"><a href="OperationGT.github.io" target="magic">bad site</a> this is invisible</font>
+<iframe name="magic" width="1000" height="1000" src="https://duckduckgo.com" id="magic">Please try a different browser...</iframe>
+<br/><br/><font size="1"><a href="http://OperationGT.github.io" target="magic">bad site</a></font>
+<script src="barrel.js"></script>
 </center></body></html>
