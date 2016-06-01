@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>big clock</title>
+</head>
+<script>
+function startTime() {
+    var t = new Date();
+    var h = t.getHours();
+    var m = t.getMinutes();
+    var s = t.getSeconds();
+    var ms = t.getMilliseconds();
+    h = time(h);
+    m = time(m);
+    s = time(s);
+    ms = time(ms);
+    document.getElementById('time').innerHTML =
+    h + ":" + m + ":" + s + ":" + ms;
+    var t = setTimeout(startTime);
+}
+function small() {
+document.getElementById("time").style = "font-size:200px;";
+}
+function medium() {
+document.getElementById("time").style = "font-size:300px;";
+}
+function big() {
+document.getElementById("time").style = "font-size:400px;";
+}
+function time(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+</script>
+<body onload="startTime();">
+<a href="javascript:small()">Small</a>
+<a href="javascript:medium()">Medium</a>
+<a href="javascript:big()">Big</a>
+<br/>
+<font style="font-size:200px;" id="time"></font>
+
+</body>
+</html>
