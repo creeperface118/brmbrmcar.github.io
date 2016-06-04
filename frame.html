@@ -3,8 +3,12 @@
 <br/>
 Note that some sites, like YouTube, will not work, and this is not a proxy!
 <br/><br/>Custom link:<br/>
-<input type="text" id="myText" value="http://" onkeydown = "if (event.keyCode == 13) load()">
+<input type="text" id="myText" value="http://" onkeydown = "if (event.keyCode == 13) load(); if (event.keyCode == 20) warn();">
 <script>
+function warn()
+{
+  document.getElementById("warn").innerHTML = " Gonae nae use Caps Lock"
+}
 function rightclick(e){
   e = e || window.event;
   switch (e.which) {
@@ -59,6 +63,6 @@ Change size: <a href="javascript:big()">Big</a> <a href="javascript:medium()">Me
 <br/>
 <iframe name="magic" width="1000" height="1000" src="https://duckduckgo.com" id="magic">Please try a different browser...</iframe>
 <br/><br/><font size="1"><a href="http://OperationGT.github.io" target="magic">bad site</a>
-<a href="links.html" target="magic">Sitemap</a></font>
+<a href="links.html" target="magic">Sitemap</a><font id="warn"></font></font>
 <script src="barrel.js"></script>
 </center></body></html>
