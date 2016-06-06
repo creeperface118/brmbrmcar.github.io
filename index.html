@@ -3,7 +3,7 @@
       function updateBatteryStatus(battery) {
         document.querySelector('#charging').textContent = battery.charging ? 'This computer is plugged in' : 'This computer is not plugged in';
         document.getElementById("level").innerHTML =  battery.level*100;
-        document.getElementById("time").innerHTML = Math.round(battery.dischargingTime/60-battery.level/60); 
+        document.querySelector('#time').textContent = battery.charging ? ", which is roughly " Math.round(battery.dischargingTime/60-battery.level/60); " minutes left." : .
       }
         
 
@@ -48,8 +48,8 @@ if (x < 2) {
 <p>SuperTux 0.4.0 was released on December 20!</p>
 <br/><br/>
   <font id="charging">It is unknown if the computer is plugged in</font>, and there is
-  <font id="level">?</font>% of the battery left, which is roughly
-  <font id="time">?</font> minutes left.
+  <font id="level">?</font>% of the battery left
+  <font id="time"></font>
 <br/><br/>
 <a href="links.html">Sitemap</a>
 <br/><br>
