@@ -3,7 +3,7 @@
       function updateBatteryStatus(battery) {
         document.querySelector('#charging').textContent = battery.charging ? 'This computer is plugged in' : 'This computer is not plugged in';
         document.getElementById("level").innerHTML =  battery.level*100;
-        document.querySelector('#time').textContent = battery.charging ? ", which is roughly " Math.round(battery.dischargingTime/60-battery.level/60); " minutes left." : .
+        document.querySelector('#time').textContent = battery.charging ? ', which is roughly ' Math.round(battery.dischargingTime/60-battery.level/60); ' minutes left.' : .
       }
         
 
