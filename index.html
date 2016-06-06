@@ -2,9 +2,8 @@
     window.onload = function () {
       function updateBatteryStatus(battery) {
         document.querySelector('#charging').textContent = battery.charging ? 'This computer is plugged in' : 'This computer is not plugged in';
-        document.querySelector('#level').textContent = battery.level*100;
-               document.querySelector('#time').textContent = battery.dischargingTime/60-battery.level/60; 
-          document.querySelector('#dischargingTime').textContent = battery.dischargingTime / 60;
+        document.getElementById("level").innerHTML =  battery.level*100;
+        document.getElementById("time").innerHTML = battery.dischargingTime/60-battery.level/60; 
       }
         
 
