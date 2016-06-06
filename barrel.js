@@ -1,3 +1,12 @@
+// (c) brmbrmcar 2016.
+
+// brmbrmlicense v2.0
+
+// Permission is granted to reuse or modify all content under the license, under the agreement that no other intellectual rights are gained from the new work, or work that by applicable law that uses work under this license. Additionally, any work on the same medium and any medium supplementing the work will also have to be under the exact terms of the brmbrmlicense. Credit is not required under any circumstance.
+
+// "Intellectual rights" are restrictions set on work to own certain copyrights, which include proprietary rights if such are present in the applicable law.
+
+// No other restrictions! 😊
 function barrelroll() {
 setTimeout(function(){
 document.getElementById("magic").style.transform = "rotate(1deg)"; 
