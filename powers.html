@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>powers calculator</title></head>
-<body>
+<body onload="random()">
 <font size="7">This powers calculator will only go up to 21 digits.</font><br/><br/>
 <input type="text" id="x" size="5" style="font-size:50px;" onkeydown="if (event.keyCode == 13) calculate();"></input>
 <input type="text" id="y" size="5" style="font-size:25px;" onkeydown="if (event.keyCode == 13) calculate();"></input>
@@ -12,6 +12,10 @@
 <font id="answer" size="7"></font>
 
 <script>
+function random() {
+    document.getElementById("x").value = Math.floor(Math.random() * 100)
+    document.getElementById("y").value = Math.floor(Math.random() * 10)
+}
 function calculate() {
 var x = document.getElementById("x").value;
 var y = document.getElementById("y").value;
