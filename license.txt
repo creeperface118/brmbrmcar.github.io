@@ -4,6 +4,6 @@ Permission is granted to reuse or modify all content under the license, under th
 
 "Intellectual rights" are restrictions set on work to own certain copyrights, which include proprietary rights if such are present in the applicable law.
 
-If a work uses another work under the brmbrmlicense, then both works are automatically placed under this license.
+If the medium uses another work under the brmbrmlicense, then the medium is automatically placed under this license.
 
 No other restrictions! 😊
